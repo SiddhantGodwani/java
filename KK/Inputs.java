@@ -11,7 +11,7 @@ public static void main(String args[]){
    
     System.out.println("Enter a int input:");
     int number = input.nextInt();
-    System.out.println("You enterred :"+ number);
+    System.out.println("You enterrrrred :"+ number);
 
     // System.out.println("Enter a Line");
     // String Line = input.nextLine();
