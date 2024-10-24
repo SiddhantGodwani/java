@@ -1,24 +1,25 @@
 package KK;
+
 import java.util.Scanner;
 import java.util.Arrays;
 
 
-public class Arrays_basics {
+public class String_Array{
 public static void main(String[] args) {
 
     //seperate decl & ini steps
-    int arr3[]; //declaration of arrays
-    arr3 = new int[3]; // Initialization of memory space
+    String arr3[]; //declaration of arrays
+    arr3 = new String[3]; // Initialization of memory space
 
-    // declaring and initializing an array of integers with size 4.
-    int[] arr = new int[4];
+    // declaring and initializing an array of Stringegers with size 4.
+    String[] arr = new String[4];
     // or directly
-    int arr2[]= {1,2,3,4};
+    String arr2[]= {"a", "b", "c", "d"};
 
     System.err.println(arr[0]); //prints initial value null/0
 
     // assigning values to array elements
-    arr[0] = 10;
+    arr[0] = "SYD";
     System.err.println(arr[0]); //prints assigned value
 
     System.err.println(arr); //prints garbage 
@@ -27,20 +28,20 @@ public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     System.out.print("Enter 4 Array input values:");
     for (int i=0; i < arr.length; i++) {
-        arr[i]= scanner.nextInt();
+        arr[i]= scanner.next();
     }
     
     
     //using string builder
     System.out.println(Arrays.toString(arr));
-
+    System.out.println(Arrays.toString(arr2));
 
     // // printing the array
-    // for (int i=0; i < arr.length; i++) {
+    // for (String i=0; i < arr.length; i++) {
     //     System.err.print(arr[i] + " "); 
     // }
     // // usin enhanced for loop/ for-each loop
-    // for (int i : arr) {
+    // for (String i : arr) {
     //     System.err.print(i); 
     // }
 
@@ -48,3 +49,4 @@ public static void main(String[] args) {
  }
 
 }
+
